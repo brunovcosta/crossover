@@ -1,12 +1,12 @@
-"cruz de vizualização
+" Cross over editing
 set timeout
 set timeoutlen=0
-hi cursorline   cterm=none ctermbg=235 
-hi cursorcolumn cterm=none ctermbg=235 
-autocmd InsertLeave *  hi cursorline   cterm=none ctermbg=235
-autocmd InsertLeave *  hi cursorcolumn   cterm=none ctermbg=235
-autocmd InsertEnter *  hi cursorline   cterm=none ctermbg=black
-autocmd InsertEnter *  hi cursorcolumn   cterm=none ctermbg=black
+hi cursorline   cterm=none ctermbg=gray 
+hi cursorcolumn cterm=none ctermbg=gray 
+autocmd InsertLeave *  hi cursorline     cterm=none ctermbg=gray
+autocmd InsertLeave *  hi cursorcolumn   cterm=none ctermbg=gray
+autocmd InsertEnter *  hi cursorline     cterm=bold ctermbg=gray
+autocmd InsertEnter *  hi cursorcolumn   cterm=none ctermbg=gray
 augroup BgHighlight
 	autocmd!
 	autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline cursorcolumn
