@@ -1,6 +1,4 @@
 " Cross over editing
-set timeout
-set timeoutlen=0
 if !exists("g:crossover_normal_color")
   let g:crossover_normal_color = 238
 endif
